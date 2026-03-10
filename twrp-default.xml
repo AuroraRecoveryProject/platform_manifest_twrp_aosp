@@ -102,5 +102,5 @@
     <include name="remove-minimal.xml"/>
 
     <!-- Use AuroraRecoveryProject wpa_supplicant_8 for recovery WiFi builds -->
-    <project path="external/wpa_supplicant_8" name="AuroraRecoveryProject/wpa_supplicant_8" remote="github" revision="main" clone-depth="1" />
+    <project path="external/wpa_supplicant_8" name="AuroraRecoveryProject/wpa_supplicant_8" remote="github" revision="twrp-16.0" clone-depth="1" />
 </manifest>
