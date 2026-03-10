@@ -68,8 +68,8 @@
     <project path="system/vold" name="android_system_vold" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/extras" name="android_system_extras" remote="TWRP-A16" revision="twrp-16.0"/>
 
-    <!-- Use TeamWin custom vendor repo for build system -->
-    <project path="vendor/twrp" name="android_vendor_twrp" remote="TWRP-A16" revision="twrp-16.0" />
+    <!-- Use AuroraRecoveryProject vendor repo for recovery WiFi build support -->
+    <project path="vendor/twrp" name="AuroraRecoveryProject/android_vendor_twrp" remote="github" revision="twrp-16.0" />
 
     <!-- Include libmicrohttpd for TWRP -->
     <project name="android_external_libmicrohttpd" path="external/libmicrohttpd" remote="TWRP-A16" revision="twrp-16.0" />
@@ -101,6 +101,6 @@
     <!-- LAST: Remove unused projects for minimal manifest -->
     <include name="remove-minimal.xml"/>
 
-        <!-- Use AuroraRecoveryProject wpa_supplicant_8 for recovery WiFi builds -->
-        <project path="external/wpa_supplicant_8" name="AuroraRecoveryProject/wpa_supplicant_8" remote="github" revision="main" clone-depth="1" />
+    <!-- Use AuroraRecoveryProject wpa_supplicant_8 for recovery WiFi builds -->
+    <project path="external/wpa_supplicant_8" name="AuroraRecoveryProject/wpa_supplicant_8" remote="github" revision="main" clone-depth="1" />
 </manifest>
